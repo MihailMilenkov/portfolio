@@ -1,8 +1,192 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Portfolio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-section text-white text-center d-flex align-items-center">
+    <div class="container">
+
+        <h1 class="display-3 fw-bold">Hi, I'm Mihail Milenkov</h1>
+
+        <p class="lead mt-3">
+            ASP.NET Core Developer building scalable web applications
+        </p>
+
+        <div class="mt-4">
+            <a href="#projects" class="btn btn-outline-light btn-lg me-3">Projects</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg me-3">Contact</a>
+            <a href="https://github.com/MihailMilenkov" class="btn btn-outline-light btn-lg">View My GitHub</a>
+        </div>
+
+    </div>
 </div>
+
+
+
+<!-- TECH STACK -->
+
+<section class="container py-5">
+
+    <h2 class="text-center mb-5">Tech Stack</h2>
+
+    <div class="row text-center">
+
+        <div class="col-md-3 mb-4">
+            <div class="tech-box">
+                <h5>C#</h5>
+                <p>Primary programming language</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="tech-box">
+                <h5>ASP.NET Core</h5>
+                <p>MVC / Web API / Razor</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="tech-box">
+                <h5>Entity Framework</h5>
+                <p>ORM & database access</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="tech-box">
+                <h5>SQL Server</h5>
+                <p>Database design & queries</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="projects-section py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">Projects</h2>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+
+                <div class="project-card">
+
+                    <h4>E-Commerce Platform</h4>
+
+                    <p>
+                        Full-featured online store with authentication,
+                        admin dashboard and payment integration.
+                    </p>
+
+                    <small>ASP.NET Core • EF Core • SQL Server</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+
+                <div class="project-card">
+
+                    <h4>Task Manager</h4>
+
+                    <p>
+                        Productivity system for teams to manage tasks,
+                        deadlines and projects.
+                    </p>
+
+                    <small>ASP.NET Core • REST API • Bootstrap</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+
+                <div class="project-card">
+
+                    <h4>Blog Platform</h4>
+
+                    <p>
+                        Blogging system with admin dashboard,
+                        comments and user authentication.
+                    </p>
+
+                    <small>ASP.NET MVC • Identity • SQL Server</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- EXPERIENCE TIMELINE -->
+
+<section class="container py-5">
+
+    <h2 class="text-center mb-5">Experience</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h5>ASP.NET Developer</h5>
+            <span>2024 – Present</span>
+            <p>Building web applications using ASP.NET Core and SQL Server.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h5>Freelance Web Developer</h5>
+            <span>2022 – 2024</span>
+            <p>Developed custom websites and backend systems.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h5>Learning & Personal Projects</h5>
+            <span>2021 – 2022</span>
+            <p>Focused on mastering ASP.NET MVC and building portfolio projects.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section text-center py-5">
+
+    <div class="container">
+
+        <h2>Contact</h2>
+
+        <p class="mt-3">
+            If you'd like to work together or discuss opportunities.
+        </p>
+
+        <p class="mt-4">
+
+            Email: your@email.com <br>
+            GitHub: github.com/yourusername <br>
+            LinkedIn: linkedin.com/in/yourname
+
+        </p>
+
+    </div>
+
+</section>
