@@ -11,13 +11,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-
-                @* <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">m_milenkov_portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> *@
+            <div class="container-fluid">                
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
@@ -45,7 +39,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2026 - m_milenkov_portfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a>&copy; 2027 - Mihail Milenkov</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -71,6 +65,17 @@
             if(localStorage.getItem("theme") === "dark"){
                 document.body.classList.add("dark-mode");
             }
+        }
+
+         function copyEmail() {
+            const email = document.getElementById("emailText").innerText;
+
+            navigator.clipboard.writeText(email).then(() => {
+                const msg = document.getElementById("copyMsg");
+                msg.style.display = "inline";
+
+                setTimeout(() => msg.style.display = "none", 20000);
+            });
         }
     </script>
 </body>
